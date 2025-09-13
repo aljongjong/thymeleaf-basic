@@ -88,6 +88,11 @@ public class BasicController {
         return "basic/link";
     }
 
+    @GetMapping("/attribute")
+    public String attribute(Model model) {
+        return "basic/attribute";
+    }
+
     @Component("helloBean")
     static class HelloBean {
         public String hello(String data) {
